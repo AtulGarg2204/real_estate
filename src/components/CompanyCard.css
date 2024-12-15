@@ -1,0 +1,65 @@
+.company-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .company-card:hover {
+    transform: scale(1.05) translateY(-5px);
+  }
+  
+  .company-card h2 {
+    font-size: 1.5rem;
+  }
+  
+  .company-card h3 {
+    color: #000;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .company-card p {
+    font-size: 1rem;
+  }
+  
+  .company-card button {
+    background-color: #218838;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .company-card button:hover {
+    background-color: #085a1a;
+  }
+  
+  .company-details-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #218838;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .company-details-link:hover {
+    background-color: #218838;
+  }
+  
+  .company-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    min-height: 200px;
+  }
+  

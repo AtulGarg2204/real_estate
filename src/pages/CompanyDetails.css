@@ -1,0 +1,77 @@
+.company-details {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 900px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+  }
+  
+  h1 {
+    font-size: 2.4rem;
+    color: #007bff;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    margin-top: 20px;
+    font-weight: 500;
+  }
+  
+  .property-card {
+    background-color: #fff;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    width: 250px;
+  }
+  
+  .property-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  .property-card button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  
+  .property-card button:hover {
+    background-color: #218838;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .properties-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 30px;
+  }
+  

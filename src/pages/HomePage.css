@@ -1,0 +1,523 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  /* Header/Navbar */
+  header {
+    background-color: #0044cc;
+    color: white;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  /* Home Page Styling */
+  .home-page {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .company-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0 auto; /* Center the entire section horizontally */
+  }
+  
+  .company-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .company-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .property-rates h2,
+  .home-page h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Container for Gainers, Losers, and News */
+  .rates-news-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center; /* Centers the content horizontally */
+    margin-top: 20px;
+    flex-wrap: wrap; /* Allows stacking on smaller screens */
+  }
+  
+  /* Left Section: Gainers and Losers */
+  .gainers-losers {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex: 1;
+  }
+  
+  .top-gainers,
+  .top-losers {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 45%; /* Ensures responsive design */
+  }
+  
+  .top-gainers h3,
+  .top-losers h3 {
+    margin-bottom: 10px;
+    color: #218838;
+  }
+  
+  .top-gainers ul,
+  .top-losers ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .top-gainers li,
+  .top-losers li {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  /* Right Section: Live Market News */
+  .live-market-news {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 100%; /* Ensure it takes up all available space */
+    height: auto; /* Let it expand as much as needed */
+    overflow: hidden; /* Prevent scrollbar */
+  }
+  
+  .live-market-news h3 {
+    margin-bottom: 15px;
+  }
+  
+  .live-market-news .news-item {
+    margin-bottom: 15px;
+  }
+  
+  .live-market-news .news-item h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .live-market-news .news-item p {
+    color: #555;
+    font-size: 14px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #0044cc;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+  }
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Header/Navbar */
+header {
+  background-color: #0044cc;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Home Page Styling */
+.home-page {
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+.company-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 0 auto; /* Center the entire section horizontally */
+}
+
+.company-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.company-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.property-rates h2,
+.home-page h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Container for Gainers, Losers, and News */
+.rates-news-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center; /* Centers the content horizontally */
+  margin-top: 20px;
+  flex-wrap: wrap; /* Allows stacking on smaller screens */
+}
+
+/* Left Section: Gainers and Losers */
+.gainers-losers {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.top-gainers,
+.top-losers {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  max-width: 45%; /* Ensures responsive design */
+}
+
+.top-gainers h3,
+.top-losers h3 {
+  margin-bottom: 10px;
+  color: #218838;
+}
+
+.top-gainers ul,
+.top-losers ul {
+  list-style: none;
+  padding: 0;
+}
+
+.top-gainers li,
+.top-losers li {
+  margin: 5px 0;
+  color: #555;
+}
+
+/* Right Section: Live Market News */
+.live-market-news {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 100%; /* Ensure it takes up all available space */
+  height: auto; /* Let it expand as much as needed */
+  overflow: hidden; /* Prevent scrollbar */
+}
+
+.live-market-news h3 {
+  margin-bottom: 15px;
+}
+
+.live-market-news .news-item {
+  margin-bottom: 15px;
+}
+
+.live-market-news .news-item h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.live-market-news .news-item p {
+  color: #555;
+  font-size: 14px;
+}
+
+/* Footer */
+footer {
+  background-color: #0044cc;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 50px;
+}
+.left-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Adds space between the two sections */
+  }
+  
+  .top-gainers, .top-losers {
+    flex: 1; /* Ensures both sections take equal space */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .top-gainers h3, .top-losers h3 {
+    margin-bottom: 10px;
+    color: #218838;
+  }
+  
+  .top-gainers ul, .top-losers ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .top-gainers li, .top-losers li {
+    margin: 5px 0;
+    color: #555;
+  }
+  .rates-news-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; /* Ensures responsiveness on smaller screens */
+  }
+  
+  .left-section {
+    display: flex;
+    gap: 20px; /* Adds space between the Gainers and Losers sections */
+    flex: 1; /* Ensures it takes up available space */
+  }
+  
+  .top-gainers, .top-losers {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .top-gainers h3, .top-losers h3 {
+    margin-bottom: 10px;
+    color: #218838;
+  }
+  
+  .top-gainers ul, .top-losers ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .top-gainers li, .top-losers li {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .right-section {
+    flex: 1;
+  }
+  
+  .live-market-news {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    height: auto;
+  }
+  .rates-news-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; /* Ensures responsiveness on smaller screens */
+    padding: 0 20px; /* Ensures proper padding for the content */
+  }
+  
+  .left-section {
+    display: flex;
+    gap: 20px; /* Adds space between Gainers and Losers */
+    flex: 3; /* Makes the left section wider */
+    margin-left: 0; /* No left margin */
+  }
+  
+  .top-gainers, .top-losers {
+    flex: 1; /* Ensures both divs take equal space */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 0; /* No margin on the left */
+  }
+  
+  .top-gainers h3, .top-losers h3 {
+    margin-bottom: 10px;
+    color: #218838;
+  }
+  
+  .top-gainers ul, .top-losers ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .top-gainers li, .top-losers li {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .right-section {
+    flex: 1.5; /* Smaller width for the right section */
+  }
+  
+  .live-market-news {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    height: auto;
+    overflow-y: auto;
+  }
+  
+  .live-market-news h3 {
+    margin-bottom: 15px;
+  }
+  
+  .live-market-news .news-item {
+    margin-bottom: 15px;
+  }
+  
+  .live-market-news .news-item h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .live-market-news .news-item p {
+    color: #555;
+    font-size: 14px;
+  }
+    /* Container for the Left Section (Top Gainers and Top Losers) */
+.left-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px; /* Adds space between the two sections */
+    flex: 1;
+    /* Optional: Add padding and margin to adjust overall positioning */
+  }
+  
+  /* Box for Top Gainers and Top Losers */
+  .top-gainers, .top-losers {
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-height: 300px; /* Fixed height for both sections */
+    overflow-y: auto; /* Enables vertical scrolling if content overflows */
+  }
+  
+  /* Heading styling */
+  .top-gainers h3,
+  .top-losers h3 {
+    font-size: 20px;
+    color: #0044cc;
+    margin-bottom: 15px;
+  }
+  
+  /* List of Gainers and Losers */
+  .top-gainers ul,
+  .top-losers ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .top-gainers li,
+  .top-losers li {
+    margin: 5px 0;
+    color: #555;
+  }
+  /* Container for Rates and News */
+.rates-news-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  /* Left Section: Top Gainers and Top Losers */
+  .left-section {
+    flex: 7; /* 70% of the available space */
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+  /* Right Section: Live Market News */
+  .right-section {
+    flex: 3; /* 30% of the available space */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Box Styling for Top Gainers and Top Losers */
+  .top-gainers, .top-losers {
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  /* Live Market News Styling */
+  .live-market-news {
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
